@@ -1,0 +1,92 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity BaudClkGen is
+generic(
+
+	NUMBER_OF_CLKS : integer;
+	SYS_CLK_FREQ : integer;
+	BAUD_RATE : integer
+
+);
+
+port
+(
+	clk : in std_logic; --FPGA built in 50MHz clk, G21
+	rst : in std_logic; --Reset
+	start : in std_logic; --Start Signal, only start clock pulses then
+	baudClk : out std_logic;
+	ready : out std_logic
+);
+end entity;
+
+
+architecture rtl of BaudClkGen is
+constant BIT_T : integer := SYS_CLK_FREQ / BAUD_RATE;
+--internal signals
+signal bitTCounter : integer range 0 to BIT_T;
+signal clks : integer range 0 to NUMBER_OF_CLKS;
+
+
+
+begin
+
+bitT : process (rst, clk)
+begin
+	if rst = '1' then
+		baudClk <= '0';
+		bitTCounter <= 0;
+	elsif rising_edge(clk) then	
+		if clks > 0 then
+			if bitTCounter = BIT_T then
+				baudClk <= '1';
+				bitTCounter <= 0;
+			else
+				baudClk <= '0';
+				bitTCounter <= bitTcounter + 1;
+			end if;
+		else
+			baudClk <= '0';
+			bitTCounter = 0;
+		end if;
+	end if;
+end process;
+
+startOrStopBaudClk : process (rst, clk)
+begin
+	if rst = '1' then
+		clks <= 0;
+	elsif rising_edge(clk) then	
+		if start = '1' then
+			clks <= NUMBER_OF_CLKS;
+		elsif baudClk = '1' then
+			clks <= clks - 1;
+		end if;
+	end if;
+end process;
+
+
+readyProc : process (rst, clk)
+begin
+	if rst = '1' then
+		ready <= '0';
+	elsif rising_edge(clk) then	
+		if start = '1' then
+			ready <= '0';
+		elsif clks = 0 then
+			ready <= '1';
+		end if;
+	end if;
+end process;
+
+
+
+
+end rtl;
+
+
+
+
+
+
+--Note: RS232 transmits LSB first

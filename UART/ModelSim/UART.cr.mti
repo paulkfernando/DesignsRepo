@@ -1,0 +1,27 @@
+C:/Designs/UART/src/Serialiser.vhd {1 {vcom -work work -2002 -explicit C:/Designs/UART/src/Serialiser.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Serialiser
+-- Compiling architecture rtl of Serialiser
+
+} {} {}} C:/Designs/UART/src/BaudClkGen.vhd {1 {vcom -work work -2008 -explicit C:/Designs/UART/src/BaudClkGen.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BaudClkGen
+-- Compiling architecture rtl of BaudClkGen
+
+} {} {}} C:/Designs/UART/testbench/BaudClkGen_tb.vhd {1 {vcom -work work -2008 -explicit C:/Designs/UART/testbench/BaudClkGen_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity BaudClkGen_tb
+-- Compiling architecture rtl of BaudClkGen_tb
+
+} {} {}}
