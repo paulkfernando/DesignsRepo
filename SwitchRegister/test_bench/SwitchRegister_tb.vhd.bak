@@ -1,0 +1,73 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity SwitchRegister_tb is
+end SwitchRegister_tb;
+
+architecture tb_arch of SwitchRegister_tb is
+    -- Component declaration for DUT (Design Under Test)
+    component SwitchRegister
+        port(
+            clk: in std_logic;
+            rst: in std_logic;
+            en: in std_logic;
+            din: in std_logic_vector(7 downto 0);
+            dout: out std_logic_vector(7 downto 0)
+        );
+    end component;
+
+    -- Signals for testbench
+    signal clk_tb: std_logic := '0';
+    signal rst_tb: std_logic := '0';
+    signal en_tb: std_logic := '0';
+    signal din_tb: std_logic_vector(7 downto 0) := (others => '0');
+    signal dout_tb: std_logic_vector(7 downto 0);
+
+    -- Clock process
+    constant CLK_PERIOD: time := 20 ns; -- Assuming 50 MHz clock
+
+begin
+
+    -- Instantiate the DUT
+    dut: SwitchRegister port map(
+        clk => clk_tb,
+        rst => rst_tb,
+        en => en_tb,
+        din => din_tb,
+        dout => dout_tb
+    );
+
+    -- Clock generation process
+    clk_process: process
+    begin
+        while now < 1000 ns loop -- Simulate for 1000 ns
+            clk_tb <= not clk_tb;
+            wait for CLK_PERIOD / 2;
+        end loop;
+        wait;
+    end process;
+
+    -- Stimulus process
+    stim_process: process
+    begin
+        rst_tb <= '1'; -- Reset active
+        wait for 10 ns;
+        rst_tb <= '0'; -- Release reset
+        wait for 10 ns;
+
+        -- Enable the shift register
+        en_tb <= '1';
+
+        -- Input data
+        din_tb <= "10101010"; -- Example input data
+
+        -- Wait for some clock cycles to allow shifts to occur
+        wait for 100 ns;
+
+        -- Disable the shift register
+        en_tb <= '0';
+
+        wait; -- Wait forever
+    end process;
+
+end tb_arch;

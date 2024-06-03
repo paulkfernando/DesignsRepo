@@ -1,0 +1,96 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0sp1
+Eswitchregister
+Z0 w1717398973
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Designs\SwitchRegister\Modelsim
+Z5 8C:/Designs/SwitchRegister/src/SwitchRegister.vhd
+Z6 FC:/Designs/SwitchRegister/src/SwitchRegister.vhd
+l0
+L5
+V`X:V5986F3g7kPEzF<FdI2
+Z7 OV;C;10.1d;51
+33
+Z8 !s108 1717399702.133000
+Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:/Designs/SwitchRegister/src/SwitchRegister.vhd|
+Z10 !s107 C:/Designs/SwitchRegister/src/SwitchRegister.vhd|
+Z11 o-work work -2008 -explicit -O0
+Z12 tExplicit 1
+!s100 TcMi?B:Y2a3ThE[fJ061Y1
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 14 switchregister 0 22 `X:V5986F3g7kPEzF<FdI2
+l20
+L15
+V8]VUeJSzWl5DI?kDG;^Wo3
+!s100 IBQNJOk`B=<f;e3>DRTPg1
+R7
+33
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+Eswitchregister_tb
+Z13 w1717399679
+R1
+R2
+R3
+R4
+Z14 8C:/Designs/SwitchRegister/test_bench/SwitchRegister_tb.vhd
+Z15 FC:/Designs/SwitchRegister/test_bench/SwitchRegister_tb.vhd
+l0
+L5
+VX4SeXCIdPbnYF8UiNPS>D2
+!s100 <4=HH?cb>84:nXU;kh<S;2
+R7
+32
+!i10b 1
+Z16 !s108 1717399702.197000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Designs/SwitchRegister/test_bench/SwitchRegister_tb.vhd|
+Z18 !s107 C:/Designs/SwitchRegister/test_bench/SwitchRegister_tb.vhd|
+Z19 o-work work -2002 -explicit -O0
+R12
+Atb
+R1
+R2
+R3
+DEx4 work 17 switchregister_tb 0 22 X4SeXCIdPbnYF8UiNPS>D2
+l27
+L8
+VXWXXWjGLRLA@EY_QJAa6_3
+!s100 @X9JJ7iH]KJC<jMk5HLgl2
+R7
+32
+!i10b 1
+R16
+R17
+R18
+R19
+R12
+Atb_arch
+R2
+R3
+DEx4 work 17 switchregister_tb 0 22 7icRPTldN8FIDHR4`>A=g3
+l29
+L7
+VnKK^MM3QER6MN7ic24XXm3
+R7
+32
+!s108 1717398385.411000
+R17
+!s107 C:/Designs/SwitchRegister/test_bench/SwitchRegister_tb.vhd|
+R19
+R12
+w1717398322
+!s100 PH5n9jhE>EmY]m^`Wd`EF3
+!i10b 1
