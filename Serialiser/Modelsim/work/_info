@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+dC:\Designs\SwitchRegister\Modelsim
+Eserialiser
+Z0 w1717774515
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Designs\Serialiser\Modelsim
+Z5 8C:/Designs/Serialiser/src/Serialiser.vhd
+Z6 FC:/Designs/Serialiser/src/Serialiser.vhd
+l0
+L16
+V3Rmm9e;M04CQ6H[D0WXFO0
+Z7 OV;C;10.1d;51
+33
+Z8 !s108 1717774915.658000
+Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:/Designs/Serialiser/src/Serialiser.vhd|
+Z10 !s107 C:/Designs/Serialiser/src/Serialiser.vhd|
+Z11 o-work work -2008 -explicit -O0
+Z12 tExplicit 1
+!s100 2TQ[XOU<MB5i0bChb0kTR2
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 10 serialiser 0 22 3Rmm9e;M04CQ6H[D0WXFO0
+l32
+L27
+V=ndUHB>=g2@FUVZZLk`m62
+!s100 ?JB>m3_S>ZXdZYCzjJ[`G1
+R7
+33
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+Etb_serialiser
+Z13 w1717775923
+R1
+R2
+R3
+R4
+Z14 8C:/Designs/Serialiser/testbench/Serialiser_tb.vhd
+Z15 FC:/Designs/Serialiser/testbench/Serialiser_tb.vhd
+l0
+L5
+VO3h_3>`0_PYV]Z1C9Je640
+!s100 P4QIO>`^bf@[njig0ngBC2
+R7
+33
+!i10b 1
+Z16 !s108 1717775930.080000
+Z17 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:/Designs/Serialiser/testbench/Serialiser_tb.vhd|
+Z18 !s107 C:/Designs/Serialiser/testbench/Serialiser_tb.vhd|
+R11
+R12
+Abehavior
+R1
+R2
+R3
+DEx4 work 13 tb_serialiser 0 22 O3h_3>`0_PYV]Z1C9Je640
+l32
+L8
+VjFBS3kDYo^4^2GdH0L;R:2
+!s100 nGd8m_iW;UWG[E[ML=K^50
+R7
+33
+!i10b 1
+R16
+R17
+R18
+R11
+R12
